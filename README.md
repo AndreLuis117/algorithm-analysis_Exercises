@@ -1,41 +1,42 @@
 # Exercícios - Análise de Algoritmos
 
 ## 1 Problema
-Quais são as duas caracterısticas mais comuns para analisar algoritmos? 
+**Quais são as duas caracterısticas mais comuns para analisar algoritmos?**
 
 R: Tempo e consumo de memória.
 
 ## 2 Problema 
-Por que a medida de tempo em segundos não representa qualificadamente o tempo de execução de um algoritmo? 
+**Por que a medida de tempo em segundos não representa qualificadamente o tempo de execução de um algoritmo?** 
 
 R: A medição de tempo em segundos não é uma medida estável e de qualidade.
 
 ## 3 Problema 
-A medida de tempo de um algoritmo é realizada através de qual informação? O que pode afetá-la? 
+**A medida de tempo de um algoritmo é realizada através de qual informação? O que pode afetá-la?**
 
 R: A medição de tempo é feita através da quantidade de passos que o algoritmo precisa finalizar a execução. O tempo de execução de um algoritmo é afetado pelo ambiente do hardware (compilador, processador, Sistema operacional da linguagem de programação, etc) e tamanho de entrada.
 
 ## 4 Problema 
-Na análise de algoritmos, qual é o valor da base da função logarıtmica e exponencial? Por que é escolhido este valor? 
+**Na análise de algoritmos, qual é o valor da base da função logarıtmica e exponencial? Por que é escolhido este valor?** 
 
 R: Base 2, por causa das operações binárias.
 
 ## 5 Problema 
-O que é complexidade de tempo? 
+**O que é complexidade de tempo?**
 
 R: É o tempo que o algoritmo leva para executar a função.
 
 ## 6 Problema 
-Dado dois algoritmos A e B com as complexidades de tempo respectivamente f1 e f2, qual é o melhor algoritmo? O que indica qual é o melhor algoritmo?
+**Dado dois algoritmos A e B com as complexidades de tempo respectivamente f1 e f2, qual é o melhor algoritmo? O que indica qual é o melhor algoritmo?**
 
 R: O tempo de execução e o número de iterações. 
 
-## 7 Problema Em uma função de complexidade, o que representa o termo n? 
+## 7 Problema 
+**Em uma função de complexidade, o que representa o termo n?**
 
 R: Tamanho  da entrada. 
 
 ## 8 Problema 
-Quais são as operações primitivas de um algoritmo?
+**Quais são as operações primitivas de um algoritmo?**
 
 R: 
 
@@ -48,12 +49,12 @@ R:
 * Retorno de um método
  
 ## 9 Problema 
-Qual é o valor de uma operação primitiva de um algoritmo? 
+**Qual é o valor de uma operação primitiva de um algoritmo?**
 
 R: Se atribui o valor 1.
 
 ## 10 Problema 
-Desenvolva o pseudocódigo do algoritmo SOMA, que realiza a soma de dois números inteiros recebidos por parâmetro e tem como saída a resultado da operação. Identifique a sua função de complexidade de tempo. 
+**Desenvolva o pseudocódigo do algoritmo SOMA, que realiza a soma de dois números inteiros recebidos por parâmetro e tem como saída a resultado da operação. Identifique a sua função de complexidade de tempo.**
 
 R:
 
@@ -68,7 +69,7 @@ f(n) = 2
 
 
 ## 11 Problema 
-Desenvolva o pseudocódigo do algoritmo SOMA VETOR, que realiza a soma de todos os elementos de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
+**Desenvolva o pseudocódigo do algoritmo SOMA VETOR, que realiza a soma de todos os elementos de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo.**
 
 R:
 
@@ -86,7 +87,7 @@ f(n) =  2n + 1
 
 
 ## 12 Problema 
-Desenvolva o pseudocódigo do algoritmo CONTAGEM ÍMPARES, que realiza a contagem de números ímpares de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
+**Desenvolva o pseudocódigo do algoritmo CONTAGEM ÍMPARES, que realiza a contagem de números ímpares de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo.** 
 
 R:
 
@@ -106,7 +107,7 @@ f(n) =  3n + 1
 
 
 ## 13 Problema 
-Desenvolva o pseudocódigo do algoritmo SOMA MATRIZ, que realiza a soma de todos os elementos de uma matriz. O algoritmo recebe a matriz M e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
+**Desenvolva o pseudocódigo do algoritmo SOMA MATRIZ, que realiza a soma de todos os elementos de uma matriz. O algoritmo recebe a matriz M e tem como saída o resultado. Identifique a sua função de complexidade de tempo.**
 
 ```
 funcao somamatriz(v){
@@ -125,21 +126,21 @@ f(n) =  n + n*n + n*n + n*n + n + 1
 f(n) =  3n² + 2n + 1
 
 ## 14 Problema 
-Desenvolva o pseudocódigo do algoritmo BUSCA MATRIZ, que identifica posição x e y de um elemento em uma matriz. O algoritmo recebe a matriz M e o valor V e tem como saída a posição x e y . Identifique a sua função de complexidade de tempo. 
+**Desenvolva o pseudocódigo do algoritmo BUSCA MATRIZ, que identifica posição x e y de um elemento em uma matriz. O algoritmo recebe a matriz M e o valor V e tem como saída a posição x e y . Identifique a sua função de complexidade de tempo.**
 
 R: 
 
 ```
 funcao buscamatriz (m,v){
-para i = 1 até comprimento(m){
-	para j = 1 até comprimento(v){
-		se m[i][j] = v{
-			retorna m[i][j]
+	para i = 1 até comprimento(m){
+		para j = 1 até comprimento(v){
+			se m[i][j] = v{
+				retorna m[i][j]
+			}
+		j += 1
 		}
-	j += 1
+	i += 1
 	}
-i += 1
-}
 retorna m
 }
 ```
@@ -150,58 +151,57 @@ f(n) = 3n² + 2n + 2
 
 
 ## 15 Problema 
-O que é análise assintótica? Qual é o seu objetivo? 
+**O que é análise assintótica? Qual é o seu objetivo?**
 
 R: É uma estimativa de tempo que o algoritmo leva para calcular. Objetivo de compreender o tempo de execução para grandes entradas.
 
 ## 16 Problema 
-Qual é o processo da análise assintótica? Crie um exemplo. 
+**Qual é o processo da análise assintótica? Crie um exemplo.**
 
 R: f(n) = 4n4 + 2n2 + 10n + 5 -> Identificar o componente de maior ordem 4n4  -> Ignorar os coeficiente -> n4
 
 
 ## 17 Problema 
-O que é a notação assintótica? 
+**O que é a notação assintótica?**
 
 R:  É uma notação para descrever uma fórmula matemática que se importa apenas com o maior componente da fórmula e ignora os fatores menores ou constantes.
 
 ## 18 Problema 
-O que é a notação O-Grande ou Big-Oh?
+**O que é a notação O-Grande ou Big-Oh?**
 
 R: Uma função é menor que ou igual a outra função g(n). F é limitada superiormente por g assintoticamente
 
 ## 19 Problema 
-Qual é a definição formal da notação  O-Grande? 
+**Qual é a definição formal da notação  O-Grande?** 
 
 R: Sejam f e g funções f,g: N → R+. Digamos que f(n) = O(g(n)) se existem inteiros positivos c e n0 tais que para todo inteiro n ≥ n0 f(n) ≤ cg(n). Quando f(n) = O(g(n)) dizemos que g(n) é o limite superior para f(n) ou, mais precisamente, que g(n) é um limitante assintótico para f(n), para enfatizar que estamos suprimento fatores constantes.
 
 ## 20 Problema 
-Crie um gráfico explicando a notação O-grande. Utilize f(n) = 2n + 4. Qual é um valor possível para n0? 
+**Crie um gráfico explicando a notação O-grande. Utilize f(n) = 2n + 4. Qual é um valor possível para n0?**
 
 R:
 
 ![alt text](https://raw.githubusercontent.com/AndreLuis117/algorithm-analysis_Exercises/master/pics/20.png)
 
 ## 21 Problema 
-O que é a notação o-pequeno ou Little-Oh? 
+**O que é a notação o-pequeno ou Little-Oh?**
 
 R: Uma é função é menor que a outra função g(n). F é denominado de g assintoticamente.
 
 ## 22 Problema 
-Qual é a definição formal da notação  o-pequeno? 
+**Qual é a definição formal da notação  o-pequeno?**
 
 R: Sejam f e g funções f,g: N → R+. Digamos que f(n) = o(g(n)) se Em outras palavras, f(n) = O(g(n)) significa que, para qualquer número real c > 0, existe um número n0, onde f(n) < cg(n) para todo n ≥ n0.
 
 ## 23 Problema 
-Crie um gráfico explicando a notação o-pequeno. 
+**Crie um gráfico explicando a notação o-pequeno.**
 
 R:
 
 ![alt text](https://raw.githubusercontent.com/AndreLuis117/algorithm-analysis_Exercises/master/pics/23.png)
 
 ## 24 Problema 
-
-Passe a notação O-grande e o-pequeno as funções abaixo: 
+**Passe a notação O-grande e o-pequeno as funções abaixo:**
 
 A) F(n) = n + 1 
 O (n)
@@ -236,8 +236,7 @@ O (n)
 o(n)
 
 ## 25 Problema 
-
-Identifique o O-Grande dos algoritmos desenvolvidos nos Problemas 10 até 14.
+**Identifique o O-Grande dos algoritmos desenvolvidos nos Problemas 10 até 14.**
 
 10) f(n) = 2  O(1)
 
