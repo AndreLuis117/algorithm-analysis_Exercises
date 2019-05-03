@@ -39,13 +39,13 @@ Quais são as operações primitivas de um algoritmo?
 
 R: 
 
-Atribuição de valores a variáveis 
-Chamadas de métodos 
-Operações aritméticas (por exemplo, adição de dois números) 
-Comparação de dois números 
-Acesso a um arranjo 
-Seguimento de uma referência para um objeto 
-Retorno de um método
+* Atribuição de valores a variáveis 
+* Chamadas de métodos 
+* Operações aritméticas (por exemplo, adição de dois números) 
+* Comparação de dois números 
+* Acesso a um arranjo 
+* Seguimento de uma referência para um objeto 
+* Retorno de um método
  
 ## 9 Problema 
 Qual é o valor de uma operação primitiva de um algoritmo? 
@@ -55,6 +55,7 @@ R: Se atribui o valor 1.
 ## 10 Problema 
 Desenvolva o pseudocódigo do algoritmo SOMA, que realiza a soma de dois números inteiros recebidos por parâmetro e tem como saída a resultado da operação. Identifique a sua função de complexidade de tempo. 
 
+'''
 funcao soma (a, b){
 	s = a +  b
 retorna s 
@@ -62,17 +63,19 @@ retorna s
 
 
 f(n) = 2
-
+'''
 
 ## 11 Problema 
 Desenvolva o pseudocódigo do algoritmo SOMA VETOR, que realiza a soma de todos os elementos de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
 
+'''
 funcao somavetor(v){
 para i em alcance(v){
 s += v[i]	
 }
 retorna s
 } 
+'''
 
 f(n) = n + n + 1
 f(n) =  2n + 1
@@ -81,6 +84,7 @@ f(n) =  2n + 1
 ## 12 Problema 
 Desenvolva o pseudocódigo do algoritmo CONTAGEM ÍMPARES, que realiza a contagem de números ímpares de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
 
+'''
 funcao contaimpares(v){
 para i em alcance(v){
 se v[i] % 2  == 0{
@@ -89,6 +93,7 @@ se v[i] % 2  == 0{
 	}
 retorna c
 }
+'''
 
 f(n) =  n + n + n + 1
 f(n) =  3n + 1
@@ -97,7 +102,7 @@ f(n) =  3n + 1
 ## 13 Problema 
 Desenvolva o pseudocódigo do algoritmo SOMA MATRIZ, que realiza a soma de todos os elementos de uma matriz. O algoritmo recebe a matriz M e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
 
-
+'''
 funcao somamatriz(v){
 	para i em alcance(v){
 		para j em alcance(i) {
@@ -108,6 +113,8 @@ i += 1
 }	
 retorna s
 }
+'''
+
 f(n) =  n + n*n + n*n + n*n + n + 1
 f(n) =  3n² + 2n + 1
 
@@ -116,6 +123,7 @@ Desenvolva o pseudocódigo do algoritmo BUSCA MATRIZ, que identifica posição x
 
 R: 
 
+'''
 funcao buscamatriz (m,v){
 para i = 1 até comprimento(m){
 	para j = 1 até comprimento(v){
@@ -128,6 +136,7 @@ i += 1
 }
 retorna m
 }
+'''
 
 f(n) = n + n*n + n*n+ n*n +n + 1 + 1
 
@@ -184,7 +193,8 @@ R:
 
 ![alt text](https://raw.githubusercontent.com/AndreLuis117/algorithm-analysis_Exercises/master/pics/23.png)
 
-##24 Problema 
+## 24 Problema 
+
 Passe a notação O-grande e o-pequeno as funções abaixo: 
 
 A) F(n) = n + 1 
@@ -219,7 +229,8 @@ H) F(n) = 3logn
 O (n)
 o(n)
 
-25 Problema 
+## 25 Problema 
+
 Identifique o O-Grande dos algoritmos desenvolvidos nos Problemas 10 até 14.
 
 10) f(n) = 2  O(1)
