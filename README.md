@@ -55,27 +55,31 @@ R: Se atribui o valor 1.
 ## 10 Problema 
 Desenvolva o pseudocódigo do algoritmo SOMA, que realiza a soma de dois números inteiros recebidos por parâmetro e tem como saída a resultado da operação. Identifique a sua função de complexidade de tempo. 
 
-'''
+R:
+
+```
 funcao soma (a, b){
 	s = a +  b
 retorna s 
 }
-
+```
 
 f(n) = 2
-'''
+
 
 ## 11 Problema 
 Desenvolva o pseudocódigo do algoritmo SOMA VETOR, que realiza a soma de todos os elementos de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
 
-'''
+R:
+
+```
 funcao somavetor(v){
 para i em alcance(v){
 s += v[i]	
 }
 retorna s
 } 
-'''
+```
 
 f(n) = n + n + 1
 f(n) =  2n + 1
@@ -84,16 +88,18 @@ f(n) =  2n + 1
 ## 12 Problema 
 Desenvolva o pseudocódigo do algoritmo CONTAGEM ÍMPARES, que realiza a contagem de números ímpares de um vetor. O algoritmo recebe o vetor V e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
 
-'''
+R:
+
+```
 funcao contaimpares(v){
-para i em alcance(v){
-se v[i] % 2  == 0{
- c += 1
+	para i em alcance(v){
+		se v[i] % 2  == 0{
+ 		c += 1
 }
 	}
 retorna c
 }
-'''
+```
 
 f(n) =  n + n + n + 1
 f(n) =  3n + 1
@@ -102,7 +108,7 @@ f(n) =  3n + 1
 ## 13 Problema 
 Desenvolva o pseudocódigo do algoritmo SOMA MATRIZ, que realiza a soma de todos os elementos de uma matriz. O algoritmo recebe a matriz M e tem como saída o resultado. Identifique a sua função de complexidade de tempo. 
 
-'''
+```
 funcao somamatriz(v){
 	para i em alcance(v){
 		para j em alcance(i) {
@@ -113,7 +119,7 @@ i += 1
 }	
 retorna s
 }
-'''
+```
 
 f(n) =  n + n*n + n*n + n*n + n + 1
 f(n) =  3n² + 2n + 1
@@ -123,7 +129,7 @@ Desenvolva o pseudocódigo do algoritmo BUSCA MATRIZ, que identifica posição x
 
 R: 
 
-'''
+```
 funcao buscamatriz (m,v){
 para i = 1 até comprimento(m){
 	para j = 1 até comprimento(v){
@@ -136,7 +142,7 @@ i += 1
 }
 retorna m
 }
-'''
+```
 
 f(n) = n + n*n + n*n+ n*n +n + 1 + 1
 
