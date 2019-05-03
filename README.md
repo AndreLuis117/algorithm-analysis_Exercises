@@ -60,7 +60,7 @@ R:
 ```
 funcao soma (a, b){
 	s = a +  b
-retorna s 
+	retorna s 
 }
 ```
 
@@ -74,9 +74,9 @@ R:
 
 ```
 funcao somavetor(v){
-para i em alcance(v){
-s += v[i]	
-}
+	para i em alcance(v){
+		s += v[i]	
+	}
 retorna s
 } 
 ```
@@ -94,8 +94,8 @@ R:
 funcao contaimpares(v){
 	para i em alcance(v){
 		se v[i] % 2  == 0{
- 		c += 1
-}
+ 			c += 1
+		}
 	}
 retorna c
 }
@@ -113,10 +113,10 @@ funcao somamatriz(v){
 	para i em alcance(v){
 		para j em alcance(i) {
 			s += v[i][j]
-j += 1		
-}
-i += 1
-}	
+			j += 1		
+		}
+	i += 1
+	}	
 retorna s
 }
 ```
